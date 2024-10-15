@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    text-align: center;
+}
+
+.login {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    background-color: #004d98; /* Azul del FC Barcelona */
+}
+
+.login-btn {
+    background-color: #A50044; /* Grana del FC Barcelona */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+}
+
+.secciones {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.secciones div {
+    width: 20%;
+    padding: 20px;
+    background-color: #A50044;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.secciones div:hover {
+    background-color: #004d98;
+}
