@@ -1,21 +1,15 @@
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Support\Facades\Schema;
+<?php
 
-class CreateNoticiasTable extends Migration
+// app/Models/Noticia.php
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Noticia extends Model
 {
-    public function up()
-    {
-        Schema::create('noticias', function (Blueprint $table) {
-            $table->id();
-            $table->string('titulo');
-            $table->text('contenido');
-            $table->timestamps();
-        });
-    }
+    use HasFactory;
 
-    public function down()
-    {
-        Schema::dropIfExists('noticias');
-    }
+    // Agregar los campos que pueden ser llenados por el usuario
+    protected $fillable = ['titulo', 'contenido', 'imagen', 'resumen', 'fecha'];
 }

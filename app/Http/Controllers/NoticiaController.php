@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 class NoticiaController extends Controller
 {
     // Mostrar todas las noticias
+    
     public function index()
     {
         $noticias = Noticia::all();
@@ -63,5 +64,8 @@ class NoticiaController extends Controller
     {
         $noticia->delete();
         return redirect()->route('noticias.index')->with('success', 'Noticia eliminada con éxito.');
+    }
+    public function lamine() {
+        return view('noticias.lamine'); // Asegúrate de que la vista 'noticias.lamine' exista
     }
 }

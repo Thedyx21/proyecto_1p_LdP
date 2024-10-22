@@ -47,22 +47,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Inicio</a>
+                        <a class="nav-link" href="{{ route('home') }}">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Noticias</a>
+                        <a class="nav-link" href="{{ route('noticias.index') }}">Noticias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Calendario</a>
+                        <a class="nav-link" href="{{ route('partidos.index') }}">Calendario</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Entradas</a>
+                        <a class="nav-link" href="{{ route('entradas.index') }}">Entradas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Ropa</a>
+                        <a class="nav-link" href="{{ route('ropa.index') }}">Ropa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-outline-light" href="#">Login</a>
+                        <a class="btn btn-outline-light" href="{{ route('login') }}">Login</a>
                     </li>
                 </ul>
             </div>
@@ -82,28 +82,28 @@
                 <div class="feature-box">
                     <h3>Noticias</h3>
                     <p>Últimas noticias del club</p>
-                    <a href="{{ url('/noticias') }}" class="btn btn-outline-dark">Ver Noticias</a> <!-- Enlace a la página de noticias -->
+                    <a href="{{ route('noticias.index') }}" class="btn btn-outline-dark">Ver Noticias</a> <!-- Enlace a la página de noticias -->
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="feature-box">
                     <h3>Calendario y Liga</h3>
                     <p>Próximos partidos y posiciones</p>
-                    <a href="{{ url('/calendario') }}" class="btn btn-outline-dark">Ver Calendario</a> <!-- Enlace a la página de calendario -->
+                    <a href="{{ route('partidos.index') }}" class="btn btn-outline-dark">Ver Calendario</a> <!-- Enlace a la página de calendario -->
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="feature-box">
                     <h3>Venta de Entradas</h3>
                     <p>Compra entradas para los partidos</p>
-                    <a href="{{ url('/entradas') }}" class="btn btn-outline-dark">Comprar Entradas</a> <!-- Enlace a la página de entradas -->
+                    <a href="{{ route('entradas.index') }}" class="btn btn-outline-dark">Comprar Entradas</a> <!-- Enlace a la página de entradas -->
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="feature-box">
                     <h3>Venta de Ropa</h3>
                     <p>Compra productos oficiales</p>
-                    <a href="{{ url('/ropa') }}" class="btn btn-outline-dark">Ver Ropa</a> <!-- Enlace a la página de ropa -->
+                    <a href="{{ route('ropa.index') }}" class="btn btn-outline-dark">Ver Ropa</a> <!-- Enlace a la página de ropa -->
                 </div>
             </div>
         </div>
@@ -112,3 +112,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
